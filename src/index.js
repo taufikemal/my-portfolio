@@ -1,12 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import fonts from './assets/font/font';
+import { Global } from "@emotion/react";
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { ChakraProvider,extendTheme } from "@chakra-ui/react";
+
+const theme = extendTheme({
+  fonts: {
+		heading: "Poppins",
+		body: "Poppins",
+	},
+})
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <ChakraProvider theme={theme}>
+        <App />
+				<Global styles={fonts}/>
+      </ChakraProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
