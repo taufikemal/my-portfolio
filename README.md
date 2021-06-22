@@ -1,7 +1,4 @@
-# Praktikum Web 3
-
 Example page portofolio, built with react,chakra ui, react-reveal, and use sound.
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## List library
