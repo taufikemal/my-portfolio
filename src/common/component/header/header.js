@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Heading, Flex, useColorMode, IconButton, Button, useDisclosure, Spacer } from '@chakra-ui/react';
-import { Modal, ModalOverlay, ModalContent, ModalBody, Text, Divider } from "@chakra-ui/react";
+import { Image, Modal, ModalOverlay, ModalContent, ModalBody, Text, Divider } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 import useSound from 'use-sound';
 import { Link } from 'react-router-dom';
@@ -16,23 +16,27 @@ function Header(props) {
 		toggleColorMode();
 	}
 
-  return ( 
+	return ( 
 		<>
 			<Flex
 				as="header"
 				align="center"
 				position="fixed"
 				zIndex="9999"
-				padding="1.0rem"
+				padding="1.2rem"
 				width="full"
 				bg={colorMode === "light" ? "gray.50" : "gray.700"}
 				color={colorMode === "light" ? "black" : "white"}
 				{...props}
 			>
 			
-			<Flex align="center" mr={5}>
-				<Heading as="h1" size="xl" letterSpacing={"-.0.1rem"} fontSize={{ base: "md", md: "md", sm: "md", lg: "md" }}>
-					Portofolio
+			<Flex align="center" mr={4} px={8}>
+				<Heading 
+					as="h1" 
+					size="xl" 
+					letterSpacing={"-.0.1rem"} 
+					fontSize={{ base: "md", md: "md", sm: "md", lg: "md" }}>
+					<Image  boxSize="40px" src="https://ik.imagekit.io/fmafj2zdejw/logo-2_1_vXQXqSgXw.png" alt="Taufik Kemal" />
 				</Heading>
 
 				<Box 
@@ -43,7 +47,7 @@ function Header(props) {
 				
 				<Button 
 					variant="ghost"
-					p={4}
+					px={4}
 					color={colorMode === "light" ? "black" : "white"}
 					fontWeight="normal"
 					borderRadius="md"
@@ -56,7 +60,7 @@ function Header(props) {
 
 				<Button 
 					variant="ghost"
-					p={4}
+					px={4}
 					color={colorMode === "light" ? "black" : "white"}
 					fontWeight="normal"
 					borderRadius="md"
@@ -75,6 +79,7 @@ function Header(props) {
 				<Box 
 					display={{ base: "none", md: "flex" }} 
 					mt={{ base: 4, md: 0 }} 
+					px={8}
 					alignContent="center"
 				>
 					<IconButton 
@@ -84,7 +89,10 @@ function Header(props) {
 						onClick={changeDarkMode} aria-label="button" />
 				</Box>
 
-				<Box display={{ base: "block", md: "none", lg: "none" }}>
+				<Box 
+					display={{ base: "block", md: "none", lg: "none" }}
+					px={8}
+				>
 					<IconButton 
 						size="xs" 
 						bg="transparent" 
