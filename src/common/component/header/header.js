@@ -36,7 +36,9 @@ function Header(props) {
 					size="xl" 
 					letterSpacing={"-.0.1rem"} 
 					fontSize={{ base: "md", md: "md", sm: "md", lg: "md" }}>
-					<Image  boxSize="40px" src="https://ik.imagekit.io/fmafj2zdejw/logo-2_1_vXQXqSgXw.png" alt="Taufik Kemal" />
+					<Link to="/">
+						<Image boxSize="40px" src="https://ik.imagekit.io/fmafj2zdejw/logo-2_1_vXQXqSgXw.png" alt="Taufik Kemal" />
+					</Link>
 				</Heading>
 
 				<Box 
@@ -55,7 +57,7 @@ function Header(props) {
 						bgGradient: "linear(to-r, teal.500,green.500)", color:"white"
 					}}
 				>
-					<Link to="/">Beranda</Link> 
+					<Link to="/">Home</Link> 
 				</Button>
 
 				<Button 
@@ -69,6 +71,19 @@ function Header(props) {
 					}}
 				>
 					<Link to="/portofolio">Portofolio</Link> 
+				</Button>
+
+				<Button 
+					variant="ghost"
+					px={4}
+					color={colorMode === "light" ? "black" : "white"}
+					fontWeight="normal"
+					borderRadius="md"
+					_hover={{
+						bgGradient: "linear(to-r, teal.500,green.500)", color:"white"
+					}}
+				>
+					<Link to="/about">About Me</Link> 
 				</Button>
 
 				</Box>
