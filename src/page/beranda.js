@@ -4,11 +4,11 @@ import Layout from "../common/component/layout/layout";
 import { Box, Text, Container, Grid, GridItem, Heading } from '@chakra-ui/react';
 
 export default function Beranda(props) {
-  return ( 
+	return ( 
     <>
-      <Layout >
+    	<Layout >
         <Container maxW="7xl" paddingTop={{ base: "7", md: "20", lg: "40" }} paddingLeft={{ base: "7", md: "20", lg: "20" }} paddingRight={{ base: "7", md: "20", lg: "20" }} paddingBottom={{ base: "20" }} minHeight="90vh">
-          <Fade duration={500} distance="30px" fraction={0.4} bottom>
+        	<Fade duration={500} distance="30px" fraction={0.4} bottom>
 						<Box mt={{ base: "44", md: "28", lg: "0" }}>
 							<Heading 
 								as="h1"
@@ -17,7 +17,16 @@ export default function Beranda(props) {
 								fontSize="6xl"
 								fontWeight="extrabold"
 							>
-								Hello, My name is Taufik Kemal Thaha
+								Hello, My name is
+							</Heading>
+							<Heading 
+								as="h1"
+								bgGradient="linear(to-r, teal.500,green.500)"
+								bgClip="text"
+								fontSize="6xl"
+								fontWeight="extrabold"
+							>
+								Taufik Kemal Thaha
 							</Heading>
 						</Box>
 					</Fade>
@@ -48,6 +57,6 @@ export default function Beranda(props) {
 						</Fade>
 				</Container>
 			</Layout>
-    </>
-  );
+		</>
+	);
 }
