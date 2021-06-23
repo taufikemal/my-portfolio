@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Layout from "../common/component/layout/layout";
-import { Box, Text, Container, Grid, GridItem, Image, Heading, Wrap, WrapItem } from '@chakra-ui/react';
+import { Box, Text, Container, Grid, GridItem, Image, Heading } from '@chakra-ui/react';
 import Pict1 from "../assets/images/pict 1.svg";
 import Pict2 from "../assets/images/pict 2.svg";
 import Pict3 from "../assets/images/pict 3.svg";
