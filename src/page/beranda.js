@@ -6,9 +6,7 @@ import Pict1 from "../assets/images/pict 1.svg";
 import Pict2 from "../assets/images/pict 2.svg";
 import Pict3 from "../assets/images/pict 3.svg";
 import Pict4 from "../assets/images/pict 4.svg";
-import Pict5 from "../assets/images/pict 5.svg";
-import Pict6 from "../assets/images/pict 6.svg";
-import Pict7 from "../assets/images/pict 7.svg";
+
 
 export default function Beranda(props) {
 	return ( 
