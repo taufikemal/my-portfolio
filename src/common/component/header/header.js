@@ -70,7 +70,7 @@ function Header(props) {
 						bgGradient: "linear(to-r, teal.500,green.500)", color:"white"
 					}}
 				>
-					<Link to="/portofolio">Portofolio</Link> 
+					<Link to="/portfolio">Portfolio</Link> 
 				</Button>
 
 				<Button 
@@ -170,7 +170,7 @@ function Header(props) {
 										paddingX="1" 
 										fontWeight="bold"
 									>
-										<Link to="/portofolio">Portofolio</Link>
+										<Link to="/portfolio">Portfolio</Link>
 									</Text>
 								</Box>
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Layout from "../common/component/layout/layout";
-import { Box, Text, Container, Grid, GridItem, Image, Heading } from '@chakra-ui/react';
+import { Box, Button, Text, Stack, Container, Grid, GridItem, Image, Link, Heading } from '@chakra-ui/react';
+import { EmailIcon } from '@chakra-ui/icons'
 import Pict1 from "../assets/images/pict 1.svg";
 import Pict2 from "../assets/images/pict 2.svg";
 import Pict3 from "../assets/images/pict 3.svg";
@@ -65,12 +66,26 @@ export default function Beranda(props) {
 								born in Palu, November 14, 2001. I like all about design, editing, videography, and music. Lives in Makassar and is currently studying at Software Engineering Technology Vocational School, Universitas Gadjah Mada, Yogyakarta, Indonesia.
 								</Text>
 							</Fade>
+							
+							<br/>
+							<Fade duration={500} distance="30px" delay={100} fraction={0.4} bottom>
+								<Stack direction="row" spacing={4} align="center">
+									<Button leftIcon={<EmailIcon />} colorScheme="teal" variant="solid">
+										<Link href="https://chakra-ui.com" isExternal>
+											Email me!
+										</Link>
+									</Button>
+									<Button colorScheme="teal" variant="ghost">
+										Button
+									</Button>
+								</Stack>
+							</Fade>
 						</GridItem>
 					
 
 					<GridItem rowSpan={2} colSpan={1}>
 					<Box mt={{ base: "44", md: "28", lg: "0" }}>
-        		<Fade duration={500} distance="30px" fraction={0.4} bottom>
+						<Fade duration={500} distance="30px" fraction={0.4} bottom>
 							<Image 
 								ml="4"
 								width="full"
