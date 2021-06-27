@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Text } from '@chakra-ui/react';
 
 export default function Footer(props) {
-  return ( 
+	return ( 
 		<>
 			<Box pt="4" pb="4" bottom="0" position="relative" as="footer" textAlign="center">
 				<Text 

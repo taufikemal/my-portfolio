@@ -55,8 +55,6 @@ export default function Beranda(props) {
 							</Fade>
 							</Box>
 
-
-
 							<Fade duration={500} distance="30px" delay={100} fraction={0.4} bottom>
 								<Text 
 									letterSpacing={"-.0.01rem"} 
@@ -90,20 +88,22 @@ export default function Beranda(props) {
 						p={8}
 						w="100%" 
 						h="100%" 
-						bg="blue.100"
+						bg="green.100"
 					>
+						<Fade duration={500} distance="30px" fraction={0.4} bottom>
 						<Image 
 							width="full"
 							height="full"
 							src={Pict2}
 						/>
+						</Fade>
 					</Box>
 
 					<Box 
 						p={8}
 						w="100%" 
 						h="100%" 
-						bg="blue.100"
+						bg="green.100"
 					>
 						<Image 
 							width="full"
@@ -118,13 +118,15 @@ export default function Beranda(props) {
 						p={8}
 						w="100%" 
 						h="100%" 
-						bg="blue.100"
+						bg="green.100"
 					>
+						<Fade duration={500} distance="30px" fraction={0.4} bottom>
 						<Image 
 							width="full"
 							height="full"
 							src={Pict4}
 						/>
+						</Fade>
 					</Box>
 				
 				</Grid>
