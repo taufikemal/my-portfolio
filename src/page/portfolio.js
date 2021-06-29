@@ -10,39 +10,47 @@ import Picture6 from "../assets/images/picture 6.jpg";
 import Picture7 from "../assets/images/picture 7.jpg";
 import Picture8 from "../assets/images/picture 8.jpg";
 import Layout from "../common/component/layout/layout";
-import { Box, Text, Container, Grid, GridItem, Heading, Image, Link } from '@chakra-ui/react';
+import { Box, Text, Container, Grid, GridItem, Heading, Image, Link} from '@chakra-ui/react';
 
 
-export default function Portofolio(props) {
+function Portfolio(props) {
 	return ( 
 		<>
 			<Layout >
 				<Container maxW="7xl" paddingTop={{ base: "7", md: "20", lg: "40" }} paddingLeft={{ base: "7", md: "20", lg: "20" }} paddingRight={{ base: "7", md: "20", lg: "20" }} paddingBottom={{ base: "20" }} minHeight="90vh">
+				
 				<Fade duration={500} distance="30px" fraction={0.4} bottom>
 					<Box mt={{ base: "44", md: "28", lg: "0" }}>
-						<Heading as="h1" letterSpacing={"-.0.001rem"} lineHeight={"-.0.001rem"} fontSize={{ base: "2xl", md: "5xl", lg: "7xl" }}>
-						Portfolio
+						<Heading 
+							as="h1" 
+							letterSpacing={"-.0.001rem"} 
+							lineHeight={"-.0.001rem"} 
+							fontSize={{ base: "2xl", md: "5xl", lg: "6xl" }}
+						>
+						Anak Teknik Indonesia
 						</Heading>
+
 						<Text 
 							letterSpacing={"-.0.01rem"} 
 							lineHeight={"-.0.001rem"} 
 							textAlign={{ base: "justify" }} 
 							fontSize={{ base: "xs", md: "xs", lg: "sm" }} 
-							maxW="xl">
-						This is also a portofolio from instagram 
-						<Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal>@UI/UX <ExternalLinkIcon mx="2px" /></Link> 
+							maxW="xl"
+						>
+							Here are some of my User Interface and Instagram Feeds Designs 
+							<Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal> @UI/UX</Link> 
 						</Text>
 					</Box>
 				</Fade>
 
 				<Fade duration={500} distance="30px" delay={340} fraction={0.4} bottom>
 					<Grid
-					pt={4}
-					h="full"
-					maxH="450px"
-					templateRows="repeat(6, 1fr)"
-					templateColumns="repeat(12, 1fr)"
-					gap={{base:2,md:4}}
+						pt={4}
+						h="full"
+						maxH="450px"
+						templateRows="repeat(6, 1fr)"
+						templateColumns="repeat(12, 1fr)"
+						gap={{base:2,md:4}}
 					>
 
 					<GridItem rowSpan={6} colSpan={8}>
@@ -86,6 +94,27 @@ export default function Portofolio(props) {
 				</Grid>
 				</Fade>
 
+				<br/><br/><br/>
+
+				<Heading 
+					as="h1" 
+					letterSpacing={"-.0.001rem"} 
+					lineHeight={"-.0.001rem"} 
+					fontSize={{ base: "2xl", md: "5xl", lg: "6xl" }}
+				>
+					Developer Student Clubs UGM
+				</Heading>
+
+				<Text 
+					letterSpacing={"-.0.01rem"} 
+					lineHeight={"-.0.001rem"} 
+					textAlign={{ base: "justify" }} 
+					fontSize={{ base: "xs", md: "xs", lg: "lg" }} 
+					maxW="xl"
+				>
+					Here are some of my Instagram Feeds Designs 
+					<Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal> @UI/UX</Link> 
+				</Text>
 				<Fade duration={500} distance="30px" delay={340} fraction={0.4} bottom>
 					<Grid
 					marginTop={{base:2,md:4}}
@@ -180,3 +209,5 @@ export default function Portofolio(props) {
 		</>
 	);
 }
+
+export default Portfolio;

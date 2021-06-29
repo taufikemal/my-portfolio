@@ -145,7 +145,7 @@ function Header(props) {
 
 
 					<IconButton
-						mx={4}
+						mx={2}
 						size="md" 
 						bg="transparent" 
 						icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />} 
