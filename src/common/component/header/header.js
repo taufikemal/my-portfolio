@@ -1,10 +1,11 @@
 import React from 'react';
+import useSound from 'use-sound';
+import SoundClick from '../../../assets/sound/pop.mp3'
+import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
 import { Box, Heading, Flex, useColorMode, IconButton, Button, useDisclosure, Spacer } from '@chakra-ui/react';
 import { Image, Modal, ModalOverlay, ModalContent, ModalBody, Text, Divider } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
-import useSound from 'use-sound';
 import { Link } from 'react-router-dom';
-import SoundClick from '../../../assets/sound/pop.mp3'
 
 function Header(props) {
 	const { colorMode, toggleColorMode } = useColorMode()
@@ -30,14 +31,14 @@ function Header(props) {
 				{...props}
 			>
 			
-			<Flex align="center" mr={4} px={8}>
+			<Flex align="center" mr={4} px={4}>
 				<Heading 
 					as="h1" 
-					size="xl" 
+					size="md" 
 					letterSpacing={"-.0.1rem"} 
 					fontSize={{ base: "md", md: "md", sm: "md", lg: "md" }}>
 					<Link to="/">
-						<Image boxSize="40px" src="https://ik.imagekit.io/fmafj2zdejw/logo-2_1_vXQXqSgXw.png" alt="Taufik Kemal" />
+						<Image boxSize="40px" src="https://i.ibb.co/GFdRrwh/logo-2-1.png" alt="Taufik Kemal" />
 					</Link>
 				</Heading>
 
@@ -97,11 +98,62 @@ function Header(props) {
 					px={8}
 					alignContent="center"
 				>
-					<IconButton 
-						size="xs" 
+					
+					<Button
+						variant="ghost"
+						color={colorMode === "light" ? "black" : "white"}
+						fontWeight="normal"
+						borderRadius="md"
+						_hover={{
+							bgGradient: "linear(to-r, teal.500,green.500)", color:"white"
+						}}
+					>
+						<Link href="https://www.instagram.com/p/CO1MxEao-RV/" isExternal>
+							<FaInstagram mx="2px" />
+						</Link>
+					</Button>
+
+					<Button
+						variant="ghost"
+						color={colorMode === "light" ? "black" : "white"}
+						fontWeight="normal"
+						borderRadius="md"
+						_hover={{
+							bgGradient: "linear(to-r, teal.500,green.500)", color:"white"
+						}}
+					>
+						<Link href="https://www.instagram.com/p/CO1MxEao-RV/" isExternal>
+							<FaLinkedin mx="2px" />
+						</Link>
+					</Button>
+
+
+					<Button
+						variant="ghost"
+						color={colorMode === "light" ? "black" : "white"}
+						fontWeight="normal"
+						borderRadius="md"
+						_hover={{
+							bgGradient: "linear(to-r, teal.500,green.500)", color:"white"
+						}}
+					>
+						<Link href="https://www.instagram.com/p/CO1MxEao-RV/" isExternal>
+							<FaGithub mx="2px" />
+						</Link>
+					</Button>
+
+
+
+					<IconButton
+						mx={4}
+						size="md" 
 						bg="transparent" 
 						icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />} 
-						onClick={changeDarkMode} aria-label="button" />
+						onClick={changeDarkMode} 
+						aria-label="button" 
+					/>
+
+
 				</Box>
 
 				<Box 
@@ -132,7 +184,7 @@ function Header(props) {
 					motionPreset="slideInBottom"
         >
 				<ModalOverlay />
-          <ModalContent>
+					<ModalContent>
 						<ModalBody>
 							<Flex 
 								align="center" 
@@ -178,7 +230,7 @@ function Header(props) {
 								<Divider />
 							</Flex>
 						</ModalBody>
-          </ModalContent>
+					</ModalContent>
 				</Modal>
     </>
 	);

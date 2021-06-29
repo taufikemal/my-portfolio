@@ -34,7 +34,7 @@ export default function Beranda(props) {
 						rowSpan={1}
 					>
 						<Box mt={{ base: "44", md: "28", lg: "0" }}>
-							<Fade duration={500} distance="30px" fraction={0.4} bottom>
+							<Fade duration={500} delay={400} distance="30px" fraction={0.4} left>
 								<Heading 
 									as="h1"
 									bgGradient="linear(to-r, teal.500,green.500)"
@@ -56,7 +56,7 @@ export default function Beranda(props) {
 							</Fade>
 							</Box>
 
-							<Fade duration={500} distance="30px" delay={100} fraction={0.4} bottom>
+							<Fade duration={500} distance="30px" delay={100} fraction={0.4} left>
 								<Text 
 									letterSpacing={"-.0.01rem"} 
 									lineHeight={"-.0.001rem"} 
@@ -68,10 +68,10 @@ export default function Beranda(props) {
 							</Fade>
 							
 							<br/>
-							<Fade duration={500} distance="30px" delay={100} fraction={0.4} bottom>
+							<Fade duration={500} distance="30px" delay={300} fraction={0.4} left>
 								<Stack direction="row" spacing={4} align="center">
 									<Button leftIcon={<EmailIcon />} colorScheme="teal" variant="solid">
-										<Link href="https://chakra-ui.com" isExternal>
+										<Link href="mailto: artcrev7@gmail.com" isExternal>
 											Email me!
 										</Link>
 									</Button>
@@ -85,7 +85,7 @@ export default function Beranda(props) {
 
 					<GridItem rowSpan={2} colSpan={1}>
 					<Box mt={{ base: "44", md: "28", lg: "0" }}>
-						<Fade duration={500} distance="30px" fraction={0.4} bottom>
+						<Fade duration={500} distance="30px" fraction={0.4} right>
 							<Image 
 								ml="4"
 								width="full"
@@ -99,50 +99,78 @@ export default function Beranda(props) {
 
 				
 				<Grid templateColumns="repeat(3, 1fr)" gap={6}>
-					<Box 
-						p={8}
-						w="100%" 
-						h="100%" 
-						bg="green.100"
-					>
-						<Fade duration={500} distance="30px" fraction={0.4} bottom>
-						<Image 
-							width="full"
-							height="full"
-							src={Pict2}
-						/>
-						</Fade>
-					</Box>
+				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
+						<Box 
+							p={8}
+							w="100%" 
+							h="100%" 
+							bg="transparent"
+						>
+							<Image 
+								width="full"
+								height="full"
+								src={Pict2}
+							/>
+							<Text 
+								fontSize="lg"
+								letterSpacing={"-.0.01rem"} 
+								lineHeight={"-.0.001rem"} 
+								textAlign="center" 
+								fontSize={{ base: "lg", md: "md", lg: "lg" }}
+							>
+								Learning about basic Front End Developing
+							</Text>
+						</Box>
+				</Fade>
 
-					<Box 
-						p={8}
-						w="100%" 
-						h="100%" 
-						bg="green.100"
-					>
-						<Image 
-							width="full"
-							height="full"
-							src={Pict3}
-						/>
-					</Box>
+					<Fade duration={600} delay={300} distance="30px" fraction={0.4} top>
+						<Box 
+							p={8}
+							w="100%" 
+							h="100%" 
+							bg="transparent"
+						>
+							<Image 
+								width="full"
+								height="full"
+								src={Pict3}
+							/>
+							<Text 
+								fontSize="lg"
+								letterSpacing={"-.0.01rem"} 
+								lineHeight={"-.0.001rem"} 
+								textAlign="center" 
+								fontSize={{ base: "lg", md: "md", lg: "lg" }}
+							>
+								Learning about basic Front End Developing
+							</Text>
+						</Box>
+					</Fade>
 
-					<Box
-						boxShadow="lg"
-						rounded="md"
-						p={8}
-						w="100%" 
-						h="100%" 
-						bg="green.100"
-					>
-						<Fade duration={500} distance="30px" fraction={0.4} bottom>
-						<Image 
-							width="full"
-							height="full"
-							src={Pict4}
-						/>
-						</Fade>
-					</Box>
+					<Fade duration={600} delay={300} distance="30px" fraction={0.4} right>
+						<Box
+							rounded="md"
+							p={8}
+							w="100%" 
+							h="100%" 
+							bg="transparent"
+						>
+							<Image 
+								width="full"
+								height="full"
+								src={Pict4}
+							/>
+							<Text 
+								fontSize="lg"
+								letterSpacing={"-.0.01rem"} 
+								lineHeight={"-.0.001rem"} 
+								textAlign="center" 
+								fontSize={{ base: "lg", md: "md", lg: "lg" }}
+							>
+								Learning about basic Front End Developing
+							</Text>
+						</Box>
+					</Fade>
 				
 				</Grid>
 				</Container>
