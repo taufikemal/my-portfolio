@@ -1,30 +1,34 @@
 import React from 'react';
+import Icon from '@chakra-ui/icon'
 import Fade from 'react-reveal/Fade';
 import Layout from "../common/component/layout/layout";
-import { Box, Button, Text, Stack, Container, Grid, GridItem, Image, Link, Heading } from '@chakra-ui/react';
 import { EmailIcon } from '@chakra-ui/icons'
+import { FaFacebookF, FaGoogle, FaSpotify, FaShopify } from 'react-icons/fa'
 import Pict1 from "../assets/images/pict 1.svg";
 import Pict2 from "../assets/images/pict 2.svg";
 import Pict3 from "../assets/images/pict 3.svg";
 import Pict4 from "../assets/images/pict 4.svg";
+import Org1 from "../assets/images/b-1.png";
+import Org2 from "../assets/images/b-2.png";
+import Org3 from "../assets/images/b-3.png";
+import Org4 from "../assets/images/b-4.png";
+import { Box, Button, Text, Stack, Container, HStack, Grid, GridItem, Image, Link, Heading } from '@chakra-ui/react';
 
 
 export default function Beranda(props) {
 	return ( 
     <>
 		<Layout >
-        <Container 
+      <Container 
 					maxW="8xl" 
 					pt ={{ base: "4", md: "20", lg: "20" }} 
 					pl ={{ base: "4", md: "20", lg: "10" }}
-					pr ={{ base: "4", md: "20", lg: "10" }} 
-					pb={{ base: "10" }} 
-					minHeight="90vh"
+					pr ={{ base: "4", md: "20", lg: "10" }}
 				>
 				<Grid
 					templateColumns="repeat(2, 2fr)"
 					templateRows="repeat(2, 2fr)" 
-					gap={8}>
+					gap={0}>
 					
 					<GridItem 
 						width="full"
@@ -97,7 +101,31 @@ export default function Beranda(props) {
 					</GridItem>
 				</Grid>	
 
-				
+				<HStack 
+					spacing="24"
+					justify="center"
+				>
+					<Image
+						width="60"
+						src={Org1}
+					/>
+
+					<Image 
+						width="60"
+						src={Org2}
+					/>
+
+					<Image 	
+						width="60"
+						src={Org3}
+					/>
+
+					<Image 	
+						width="60"
+						src={Org4}
+					/>
+				</HStack>
+
 				<Grid templateColumns="repeat(3, 1fr)" gap={6}>
 				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
 						<Box 
@@ -115,8 +143,7 @@ export default function Beranda(props) {
 								fontSize="lg"
 								letterSpacing={"-.0.01rem"} 
 								lineHeight={"-.0.001rem"} 
-								textAlign="center" 
-								fontSize={{ base: "lg", md: "md", lg: "lg" }}
+								textAlign="center"
 							>
 								Learning about basic Front End Developing
 							</Text>
@@ -139,8 +166,7 @@ export default function Beranda(props) {
 								fontSize="lg"
 								letterSpacing={"-.0.01rem"} 
 								lineHeight={"-.0.001rem"} 
-								textAlign="center" 
-								fontSize={{ base: "lg", md: "md", lg: "lg" }}
+								textAlign="center"
 							>
 								Learning about basic Front End Developing
 							</Text>
@@ -164,8 +190,7 @@ export default function Beranda(props) {
 								fontSize="lg"
 								letterSpacing={"-.0.01rem"} 
 								lineHeight={"-.0.001rem"} 
-								textAlign="center" 
-								fontSize={{ base: "lg", md: "md", lg: "lg" }}
+								textAlign="center"							
 							>
 								Learning about basic Front End Developing
 							</Text>
