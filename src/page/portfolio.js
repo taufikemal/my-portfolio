@@ -1,13 +1,16 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import Picture1 from "../assets/images/picture 1.jpg";
-import Picture2 from "../assets/images/picture 2.jpg";
-import Picture3 from "../assets/images/picture 3.jpg";
-import Picture4 from "../assets/images/picture 4.jpg";
-import Picture5 from "../assets/images/picture 5.jpg";
-import Picture6 from "../assets/images/picture 6.jpg";
-import Picture7 from "../assets/images/picture 7.jpg";
-import Picture8 from "../assets/images/picture 8.jpg";
+import Antek1 from "../assets/images/c-1.jpg";
+import Antek2 from "../assets/images/c-2.png";
+import Antek3 from "../assets/images/c-3.png";
+import Dsc1 from "../assets/images/d-1.png";
+import Dsc2 from "../assets/images/d-2.png";
+import Dsc3 from "../assets/images/d-3.png";
+import Dsc4 from "../assets/images/d-4.png";
+import Marmud1 from "../assets/images/e-1.png";
+import Marmud2 from "../assets/images/e-2.png";
+import Marmud3 from "../assets/images/e-3.png";
+import Marmud4 from "../assets/images/e-4.png";
 import Layout from "../common/component/layout/layout";
 import { Box, Text, Container, Grid, GridItem, Heading, Image, Link} from '@chakra-ui/react';
 
@@ -32,12 +35,12 @@ function Portfolio(props) {
 						<Text 
 							letterSpacing={"-.0.01rem"} 
 							lineHeight={"-.0.001rem"} 
-							textAlign={{ base: "justify" }} 
-							fontSize={{ base: "xs", md: "xs", lg: "sm" }} 
+							textAlign={{ base: "left" }} 
+							fontSize={{ base: "xs", md: "xs", lg: "md" }} 
 							maxW="xl"
 						>
 							Here are some of my User Interface and Instagram Feeds Designs 
-							<Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal> @UI/UX</Link> 
+							<Link href="https://www.instagram.com/anakteknikindo/" color="teal.500" isExternal> @anakteknikindo</Link> 
 						</Text>
 					</Box>
 				</Fade>
@@ -46,7 +49,7 @@ function Portfolio(props) {
 					<Grid
 						pt={4}
 						h="full"
-						maxH="450px"
+						maxH="600px"
 						templateRows="repeat(6, 1fr)"
 						templateColumns="repeat(12, 1fr)"
 						gap={{base:2,md:4}}
@@ -54,7 +57,7 @@ function Portfolio(props) {
 
 					<GridItem rowSpan={6} colSpan={8}>
 						<Image
-						src ={Picture1}
+						src ={Antek1}
 						loading="lazy"
 						alt="picture"
 						boxSize="full"
@@ -67,7 +70,7 @@ function Portfolio(props) {
 
 					<GridItem rowSpan={3} colSpan={4}>
 						<Image
-						src ={Picture2}
+						src ={Antek2}
 						alt=""
 						loading="lazy"
 						boxSize="full"
@@ -81,7 +84,7 @@ function Portfolio(props) {
 					<GridItem rowSpan={3} colSpan={4}>
 						<Image
 						loading="lazy"
-						src ={Picture3}
+						src ={Antek3}
 						alt=""
 						boxSize="full"
 						objectFit="cover"
@@ -111,61 +114,56 @@ function Portfolio(props) {
 						letterSpacing={"-.0.01rem"} 
 						lineHeight={"-.0.001rem"} 
 						textAlign={{ base: "justify" }} 
-						fontSize={{ base: "xs", md: "xs", lg: "lg" }} 
+						fontSize={{ base: "xs", md: "xs", lg: "md" }} 
 						maxW="xl"
 					>
 						Here are some of my Instagram Feeds Designs 
-						<Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal> @UI/UX</Link> 
+						<Link href="https://www.instagram.com/dsc.ugm/" color="teal.500" isExternal> @dsc.ugm</Link> 
 					</Text>
 				</Fade>
 
 				<Fade duration={500} distance="30px" delay={340} fraction={0.4} bottom>
 					<Grid
 					marginTop={{base:2,md:4}}
-					h="full"
-					maxH="700px"
-					templateRows="repeat(6, 1fr)"
-					templateColumns="repeat(12, 1fr)"
-					w="full"
+					w="100%"
+					templateRows="repeat(1, 4fr)"
+					templateColumns="repeat(4, 4fr)"
 					gap={{base:2,md:4}}
 					>
 
-					<GridItem rowSpan={3} colSpan={4}>
+					<GridItem colSpan={1}>
 						<Image
-						src ={Picture4}
-						alt=""
-						loading="lazy"
-						boxSize="full"
-						objectFit="cover"
+						src ={Dsc1}
 						borderRadius="md"
-						width="full"
-						height="full"
+						objectFit="cover"
+						boxSize="full"
 						/>
 					</GridItem>
 
-					<GridItem rowSpan={6} colSpan={8}>
+					<GridItem colSpan={1}>
 						<Image
-						src ={Picture5}
-						alt= ""
-						boxSize="full"
-						objectFit="cover"
+						src ={Dsc2}
 						borderRadius="md"
-						width="full"
-						height="full"
-						loading="lazy"
+						objectFit="cover"
+						boxSize="full"
 						/>
 					</GridItem>
 
-					<GridItem rowSpan={3} colSpan={4}>
+					<GridItem colSpan={1}>
 						<Image
-						src ={Picture6}
-						alt=""
-						loading="lazy"
-						boxSize="full"
-						objectFit="cover"
+						src ={Dsc3}
 						borderRadius="md"
-						width="full"
-						height="full"
+						objectFit="cover"
+						boxSize="full"
+						/>
+					</GridItem>
+
+					<GridItem colSpan={1}>
+						<Image
+						src ={Dsc4}
+						borderRadius="md"
+						objectFit="cover"
+						boxSize="full"
 						/>
 					</GridItem>
 				</Grid>
@@ -180,7 +178,7 @@ function Portfolio(props) {
 						lineHeight={"-.0.001rem"} 
 						fontSize={{ base: "2xl", md: "5xl", lg: "6xl" }}
 					>
-						Developer Student Clubs UGM
+						Mardliyyah UGM
 					</Heading>
 				</Fade>
 
@@ -188,12 +186,12 @@ function Portfolio(props) {
 					<Text 
 						letterSpacing={"-.0.01rem"} 
 						lineHeight={"-.0.001rem"} 
-						textAlign={{ base: "justify" }} 
+						textAlign={{ base: "left" }} 
 						fontSize={{ base: "xs", md: "xs", lg: "lg" }} 
 						maxW="xl"
 					>
-						Here are some of my Instagram Feeds Designs 
-						<Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal> @UI/UX</Link> 
+						Here are some of my Booklet Designs 
+						<Link href="https://www.instagram.com/mardliyyah.muda/" color="teal.500" isExternal> @mardliyyah.muda</Link> 
 					</Text>
 				</Fade>
 
@@ -201,7 +199,7 @@ function Portfolio(props) {
 					<Grid
 					marginTop={{base:2,md:4}}
 					h="full"
-					templateRows="repeat(6, 1fr)"
+					templateRows="repeat(12, 1fr)"
 					templateColumns="repeat(12, 1fr)"
 					w="full"
 					gap={{base:2,md:4}}
@@ -209,7 +207,7 @@ function Portfolio(props) {
 
 					<GridItem rowSpan={6} colSpan={6}>
 						<Image
-						src ={Picture7}
+						src ={Marmud1}
 						alt=""
 						loading="lazy"
 						boxSize="full"
@@ -222,7 +220,33 @@ function Portfolio(props) {
 
 					<GridItem rowSpan={6} colSpan={6}>
 						<Image
-						src ={Picture8}
+						src ={Marmud2}
+						alt=""
+						loading="lazy"
+						boxSize="full"
+						objectFit="cover"
+						borderRadius="md"
+						width="full"
+						height="full"
+						/>
+					</GridItem>
+
+					<GridItem rowSpan={6} colSpan={6}>
+						<Image
+						src ={Marmud3}
+						alt=""
+						loading="lazy"
+						boxSize="full"
+						objectFit="cover"
+						borderRadius="md"
+						width="full"
+						height="full"
+						/>
+					</GridItem>
+
+					<GridItem rowSpan={6} colSpan={6}>
+						<Image
+						src ={Marmud4}
 						alt=""
 						loading="lazy"
 						boxSize="full"

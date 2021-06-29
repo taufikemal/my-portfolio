@@ -3,7 +3,7 @@ import useSound from 'use-sound';
 import SoundClick from '../../../assets/sound/pop.mp3'
 import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
 import { Box, Heading, Flex, useColorMode, IconButton, Button, useDisclosure, Spacer } from '@chakra-ui/react';
-import { Image, Modal, ModalOverlay, ModalContent, ModalBody, Text, Divider } from "@chakra-ui/react";
+import { Image, Modal, ModalOverlay, ModalContent, ModalBody, Text, Divider, Link as LinkChakra } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 import { Link } from 'react-router-dom';
 
@@ -99,6 +99,7 @@ function Header(props) {
 					alignContent="center"
 				>
 					
+					<LinkChakra href="https://www.instagram.com/taufikemal_" isExternal>
 					<Button
 						variant="ghost"
 						color={colorMode === "light" ? "black" : "white"}
@@ -108,39 +109,39 @@ function Header(props) {
 							bgGradient: "linear(to-r, teal.500,green.500)", color:"white"
 						}}
 					>
-						<Link href="https://www.instagram.com/p/CO1MxEao-RV/" isExternal>
-							<FaInstagram mx="2px" />
-						</Link>
+						<FaInstagram mx="2px" />
 					</Button>
+					</LinkChakra>
 
-					<Button
-						variant="ghost"
-						color={colorMode === "light" ? "black" : "white"}
-						fontWeight="normal"
-						borderRadius="md"
-						_hover={{
-							bgGradient: "linear(to-r, teal.500,green.500)", color:"white"
-						}}
-					>
-						<Link href="https://www.instagram.com/p/CO1MxEao-RV/" isExternal>
-							<FaLinkedin mx="2px" />
-						</Link>
-					</Button>
+					<LinkChakra href="https://www.linkedin.com/in/taufikemal/" isExternal>
+						<Button
+							variant="ghost"
+							color={colorMode === "light" ? "black" : "white"}
+							fontWeight="normal"
+							borderRadius="md"
+							_hover={{
+								bgGradient: "linear(to-r, teal.500,green.500)", color:"white"
+							}}
+						>
+								<FaLinkedin mx="2px" />
+						</Button>
+					</LinkChakra>
 
 
-					<Button
-						variant="ghost"
-						color={colorMode === "light" ? "black" : "white"}
-						fontWeight="normal"
-						borderRadius="md"
-						_hover={{
-							bgGradient: "linear(to-r, teal.500,green.500)", color:"white"
-						}}
-					>
-						<Link href="https://github.com/taufikemal" isExternal>
-							<FaGithub mx="2px" />
-						</Link>
-					</Button>
+					<LinkChakra href="https://github.com/taufikemal" isExternal>
+						<Button
+							variant="ghost"
+							color={colorMode === "light" ? "black" : "white"}
+							fontWeight="normal"
+							borderRadius="md"
+							_hover={{
+								bgGradient: "linear(to-r, teal.500,green.500)", color:"white"
+							}}
+						>
+							
+								<FaGithub mx="2px" />
+						</Button>
+					</LinkChakra>
 
 
 

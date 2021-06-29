@@ -6,6 +6,7 @@ import Pict1 from "../assets/images/pict 1.svg";
 import Pict2 from "../assets/images/pict 2.svg";
 import Pict3 from "../assets/images/pict 3.svg";
 import Pict4 from "../assets/images/pict 4.svg";
+import Pict5 from "../assets/images/pict 5.svg";
 import Org1 from "../assets/images/b-1.png";
 import Org2 from "../assets/images/b-2.png";
 import Org3 from "../assets/images/b-3.png";
@@ -17,7 +18,7 @@ function Beranda(props) {
 	return ( 
     <>
 		<Layout >
-    	<Container 
+			<Container 
 					maxW="8xl" 
 					pt ={{ base: "4", md: "20", lg: "20" }} 
 					pl ={{ base: "4", md: "20", lg: "10" }}
@@ -159,7 +160,7 @@ function Beranda(props) {
 								mr="6"
 								width="full"
 								height="full"
-								src={Pict1}
+								src={Pict5}
 							/>
 						</Fade>
 					</Box>
