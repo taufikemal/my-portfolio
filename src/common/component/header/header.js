@@ -137,7 +137,7 @@ function Header(props) {
 							bgGradient: "linear(to-r, teal.500,green.500)", color:"white"
 						}}
 					>
-						<Link href="https://www.instagram.com/p/CO1MxEao-RV/" isExternal>
+						<Link href="https://github.com/taufikemal" isExternal>
 							<FaGithub mx="2px" />
 						</Link>
 					</Button>

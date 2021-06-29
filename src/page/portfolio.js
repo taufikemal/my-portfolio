@@ -1,6 +1,5 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
 import Picture1 from "../assets/images/picture 1.jpg";
 import Picture2 from "../assets/images/picture 2.jpg";
 import Picture3 from "../assets/images/picture 3.jpg";
@@ -17,7 +16,7 @@ function Portfolio(props) {
 	return ( 
 		<>
 			<Layout >
-				<Container maxW="7xl" paddingTop={{ base: "7", md: "20", lg: "40" }} paddingLeft={{ base: "7", md: "20", lg: "20" }} paddingRight={{ base: "7", md: "20", lg: "20" }} paddingBottom={{ base: "20" }} minHeight="90vh">
+				<Container maxW="7xl" paddingTop={{ base: "7", md: "20", lg: "36" }} paddingLeft={{ base: "7", md: "20", lg: "20" }} paddingRight={{ base: "7", md: "20", lg: "20" }} paddingBottom={{ base: "20" }} minHeight="90vh">
 				
 				<Fade duration={500} distance="30px" fraction={0.4} bottom>
 					<Box mt={{ base: "44", md: "28", lg: "0" }}>
@@ -96,25 +95,30 @@ function Portfolio(props) {
 
 				<br/><br/><br/>
 
-				<Heading 
-					as="h1" 
-					letterSpacing={"-.0.001rem"} 
-					lineHeight={"-.0.001rem"} 
-					fontSize={{ base: "2xl", md: "5xl", lg: "6xl" }}
-				>
-					Developer Student Clubs UGM
-				</Heading>
+				<Fade duration={500} distance="30px" fraction={0.4} bottom>
+					<Heading 
+						as="h1" 
+						letterSpacing={"-.0.001rem"} 
+						lineHeight={"-.0.001rem"} 
+						fontSize={{ base: "2xl", md: "5xl", lg: "6xl" }}
+					>
+						Developer Student Clubs UGM
+					</Heading>
+				</Fade>
 
-				<Text 
-					letterSpacing={"-.0.01rem"} 
-					lineHeight={"-.0.001rem"} 
-					textAlign={{ base: "justify" }} 
-					fontSize={{ base: "xs", md: "xs", lg: "lg" }} 
-					maxW="xl"
-				>
-					Here are some of my Instagram Feeds Designs 
-					<Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal> @UI/UX</Link> 
-				</Text>
+				<Fade duration={500} distance="30px" fraction={0.4} bottom>
+					<Text 
+						letterSpacing={"-.0.01rem"} 
+						lineHeight={"-.0.001rem"} 
+						textAlign={{ base: "justify" }} 
+						fontSize={{ base: "xs", md: "xs", lg: "lg" }} 
+						maxW="xl"
+					>
+						Here are some of my Instagram Feeds Designs 
+						<Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal> @UI/UX</Link> 
+					</Text>
+				</Fade>
+
 				<Fade duration={500} distance="30px" delay={340} fraction={0.4} bottom>
 					<Grid
 					marginTop={{base:2,md:4}}
@@ -165,6 +169,32 @@ function Portfolio(props) {
 						/>
 					</GridItem>
 				</Grid>
+				</Fade>
+				
+				<br/><br/><br/>
+
+				<Fade duration={500} distance="30px" fraction={0.4} bottom>
+					<Heading 
+						as="h1" 
+						letterSpacing={"-.0.001rem"} 
+						lineHeight={"-.0.001rem"} 
+						fontSize={{ base: "2xl", md: "5xl", lg: "6xl" }}
+					>
+						Developer Student Clubs UGM
+					</Heading>
+				</Fade>
+
+				<Fade duration={500} distance="30px" fraction={0.4} bottom>
+					<Text 
+						letterSpacing={"-.0.01rem"} 
+						lineHeight={"-.0.001rem"} 
+						textAlign={{ base: "justify" }} 
+						fontSize={{ base: "xs", md: "xs", lg: "lg" }} 
+						maxW="xl"
+					>
+						Here are some of my Instagram Feeds Designs 
+						<Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal> @UI/UX</Link> 
+					</Text>
 				</Fade>
 
 				<Fade duration={500} distance="30px" delay={340} fraction={0.4} bottom>
