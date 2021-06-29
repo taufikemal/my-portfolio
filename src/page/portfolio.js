@@ -23,8 +23,14 @@ export default function Portofolio(props) {
 						<Heading as="h1" letterSpacing={"-.0.001rem"} lineHeight={"-.0.001rem"} fontSize={{ base: "2xl", md: "5xl", lg: "7xl" }}>
 						Portfolio
 						</Heading>
-						<Text letterSpacing={"-.0.01rem"} lineHeight={"-.0.001rem"} textAlign={{ base: "justify" }} fontSize={{ base: "xs", md: "xs", lg: "sm" }} maxW="xl">
-						This is also a portofolio from instagram <Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal>@UI/UX <ExternalLinkIcon mx="2px" /></Link> 
+						<Text 
+							letterSpacing={"-.0.01rem"} 
+							lineHeight={"-.0.001rem"} 
+							textAlign={{ base: "justify" }} 
+							fontSize={{ base: "xs", md: "xs", lg: "sm" }} 
+							maxW="xl">
+						This is also a portofolio from instagram 
+						<Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal>@UI/UX <ExternalLinkIcon mx="2px" /></Link> 
 						</Text>
 					</Box>
 				</Fade>
