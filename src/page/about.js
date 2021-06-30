@@ -1,13 +1,8 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Layout from "../common/component/layout/layout";
-import { Box, Button, Text, Stack, Container, Grid, GridItem, Image, Link, Heading } from '@chakra-ui/react';
-import { EmailIcon } from '@chakra-ui/icons'
-import Pict2 from "../assets/images/pict 2.svg";
-import Pict3 from "../assets/images/pict 3.svg";
-import Pict4 from "../assets/images/pict 4.svg";
-import Pict6 from "../assets/images/pict 6.svg";
-import Pict7 from "../assets/images/pict 6.svg";
+import { Box, Button, Center, Text, Stack, Container, Grid, GridItem, Image, Link, Heading } from '@chakra-ui/react';
+import { DownloadIcon, EmailIcon } from '@chakra-ui/icons'
 import Pict8 from "../assets/images/pict 8.png";
 
 
@@ -71,14 +66,19 @@ export default function Beranda(props) {
 							<br/>
 							<Fade duration={500} distance="30px" delay={300} fraction={0.4} left>
 								<Stack direction="row" spacing={4} align="center">
+
 									<Button leftIcon={<EmailIcon />} colorScheme="teal" variant="solid">
 										<Link href="https://chakra-ui.com" isExternal>
 											Email me!
 										</Link>
 									</Button>
-									<Button colorScheme="teal" variant="ghost">
-										Button
+
+									<Button leftIcon={<DownloadIcon />} colorScheme="teal" variant="ghost">
+										<Link href="https://drive.google.com/file/d/1sHwu9XFt7JgLYxOf_LUubp5OlHdBHz4I/view?usp=sharing" isExternal>
+											My Curriculum Vitae
+										</Link>
 									</Button>
+
 								</Stack>
 							</Fade>
 						</GridItem>
@@ -89,7 +89,7 @@ export default function Beranda(props) {
 						<Fade duration={500} distance="30px" fraction={0.4} right>
 							<Image 
 								mx="12"
-								my="2"
+								my="1"
 								width="600"
 								height="600"
 								src={Pict8}
@@ -99,54 +99,117 @@ export default function Beranda(props) {
 					</GridItem>
 				</Grid>	
 
-				
-				<Grid templateColumns="repeat(3, 1fr)" gap={6}>
+				<Heading 
+					as="h1"
+					bgGradient="linear(to-r, teal.500,green.500)"
+					bgClip="text"
+					fontSize="4xl"
+					fontWeight="extrabold"
+					justify="center"
+					textAlign="center"
+				>
+					The tools I use
+				</Heading>
+
+				<br/>
+
+				<Grid templateColumns="repeat(3, 2fr)" gap={6}>
 				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
-						<Box 
-							p={8}
+						<Center 
+							p={2}
 							w="100%" 
 							h="100%" 
-							bg="green.100"
+							bg="pink.300"
+							alignItems="center"
 						>
 							<Image 
-								width="full"
-								height="full"
-								src={Pict2}
+								width="60%"
+								height="60%"
+								src={"https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg"}
 							/>
-						</Box>
+						</Center>
 				</Fade>
 
-					<Fade duration={600} delay={300} distance="30px" fraction={0.4} top>
-						<Box 
-							p={8}
+				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
+						<Center 
+							p={2}
+							
 							w="100%" 
 							h="100%" 
 							bg="green.100"
+							alignItems="center"
 						>
-							<Image 
-								width="full"
-								height="full"
-								src={Pict3}
+							<Image
+								my={16} 
+								width="60%"
+								src={"https://crackedrar.com/wp-content/uploads/2019/04/CorelDRAW-2018-Logo.png"}
 							/>
-						</Box>
-					</Fade>
+						</Center>
+				</Fade>
 
-					<Fade duration={600} delay={300} distance="30px" fraction={0.4} right>
-						<Box
-							boxShadow="lg"
-							rounded="md"
-							p={8}
+				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
+						<Center 
+							p={2}
 							w="100%" 
 							h="100%" 
-							bg="green.100"
+							bg="purple.600"
+							alignItems="center"
 						>
 							<Image 
-								width="full"
-								height="full"
-								src={Pict4}
+								width="60%"
+								height="60%"
+								src={"https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg"}
 							/>
-						</Box>
-					</Fade>
+						</Center>
+				</Fade>
+
+				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
+						<Center 
+							p={2}
+							w="100%" 
+							h="100%" 
+							bg="orange.500"
+							alignItems="center"
+						>
+							<Image 
+								width="60%"
+								height="60%"
+								src={"https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"}
+							/>
+						</Center>
+				</Fade>
+
+				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
+						<Center 
+							p={2}
+							w="100%" 
+							h="100%" 
+							bg="cyan.300"
+							alignItems="center"
+						>
+							<Image 
+								width="60%"
+								height="60%"
+								src={"https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"}
+							/>
+						</Center>
+				</Fade>
+
+				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
+						<Center 
+							p={2}
+							w="100%" 
+							h="100%" 
+							bg="purple.800"
+							alignItems="center"
+						>
+							<Image 
+								width="60%"
+								height="60%"
+								src={"https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg"}
+							/>
+						</Center>
+				</Fade>
 				
 				</Grid>
 				</Container>

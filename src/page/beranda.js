@@ -187,7 +187,7 @@ function Beranda(props) {
 									fontSize="4xl"
 									fontWeight="extrabold"
 								>
-									Hello, Welcome to my
+									Keep Learning
 								</Heading>
 								<Heading 
 									as="h1"
@@ -196,7 +196,7 @@ function Beranda(props) {
 									fontSize="5xl"
 									fontWeight="extrabold"
 								>
-									Personal Website
+									Keep Exploring
 								</Heading>
 							</Fade>
 							</Box>
@@ -208,23 +208,12 @@ function Beranda(props) {
 									textAlign="justify" 
 									fontSize={{ base: "lg", md: "md", lg: "xl" }}
 								>
-									I am Taufik Kemal Thaha, you can call me "Kemal" and i'am a Graphic Designer, Content creator and UI/UX Learner. Nice to meet you
+									Exploration and learning new things with anyone, anytime, and anywhere.
 								</Text>
 							</Fade>
 							
 							<br/>
-							<Fade duration={500} distance="30px" delay={300} fraction={0.4} left>
-								<Stack direction="row" spacing={4} align="center">
-									<Button leftIcon={<EmailIcon />} colorScheme="teal" variant="solid">
-										<Link href="mailto: artcrev7@gmail.com" isExternal>
-											Email me!
-										</Link>
-									</Button>
-									<Button colorScheme="teal" variant="ghost">
-										Button
-									</Button>
-								</Stack>
-							</Fade>
+							
 						</GridItem>
 				</Grid>
 
