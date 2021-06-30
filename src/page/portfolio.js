@@ -1,5 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import { Box, Text, Container, Grid, GridItem, Button, Heading, Image, Link} from '@chakra-ui/react';
+import { ArrowForwardIcon } from '@chakra-ui/icons'
 import Antek1 from "../assets/images/c-1.jpg";
 import Antek2 from "../assets/images/c-2.png";
 import Antek3 from "../assets/images/c-3.png";
@@ -11,8 +13,12 @@ import Marmud1 from "../assets/images/e-1.png";
 import Marmud2 from "../assets/images/e-2.png";
 import Marmud3 from "../assets/images/e-3.png";
 import Marmud4 from "../assets/images/e-4.png";
+import Drib1 from "../assets/images/f-1.png";
+import Drib2 from "../assets/images/f-2.png";
+import Drib3 from "../assets/images/f-3.png";
+import Drib4 from "../assets/images/f-4.png";
+import Drib5 from "../assets/images/f-5.png";
 import Layout from "../common/component/layout/layout";
-import { Box, Text, Container, Grid, GridItem, Heading, Image, Link} from '@chakra-ui/react';
 
 
 function Portfolio(props) {
@@ -208,32 +214,93 @@ function Portfolio(props) {
 					<GridItem rowSpan={6} colSpan={6}>
 						<Image
 						src ={Marmud1}
-						alt=""
-						loading="lazy"
-						boxSize="full"
-						objectFit="cover"
 						borderRadius="md"
-						width="full"
-						height="full"
+						objectFit="cover"
+						boxSize="full"
 						/>
 					</GridItem>
 
 					<GridItem rowSpan={6} colSpan={6}>
 						<Image
 						src ={Marmud2}
-						alt=""
-						loading="lazy"
-						boxSize="full"
-						objectFit="cover"
 						borderRadius="md"
-						width="full"
-						height="full"
+						objectFit="cover"
+						boxSize="full"
 						/>
 					</GridItem>
 
 					<GridItem rowSpan={6} colSpan={6}>
 						<Image
 						src ={Marmud3}
+						borderRadius="md"
+						objectFit="cover"
+						boxSize="full"
+						/>
+					</GridItem>
+
+					<GridItem rowSpan={6} colSpan={6}>
+						<Image
+						src ={Marmud4}
+						borderRadius="md"
+						objectFit="cover"
+						boxSize="full"
+						/>
+					</GridItem>
+				</Grid>
+				</Fade>
+
+				<br/><br/><br/>
+
+				<Fade duration={500} distance="30px" fraction={0.4} bottom>
+					<Heading 
+						as="h1" 
+						letterSpacing={"-.0.001rem"} 
+						lineHeight={"-.0.001rem"} 
+						fontSize={{ base: "2xl", md: "5xl", lg: "6xl" }}
+					>
+						Dribbble Exploration
+					</Heading>
+				</Fade>
+
+				<Fade duration={500} distance="30px" fraction={0.4} bottom>
+					<Text 
+						letterSpacing={"-.0.01rem"} 
+						lineHeight={"-.0.001rem"} 
+						textAlign={{ base: "left" }} 
+						fontSize={{ base: "xs", md: "xs", lg: "lg" }} 
+						maxW="xl"
+					>
+						Here are some of my Design Exploration 
+						<Link href="https://dribbble.com/taufikemal_" color="teal.500" isExternal> @Dribbble</Link> 
+					</Text>
+				</Fade>
+
+				<Fade duration={500} distance="30px" delay={340} fraction={0.4} bottom>
+					<Grid
+						pt={4}
+						h="full"
+						maxH="600px"
+						templateRows="repeat(6, 1fr)"
+						templateColumns="repeat(12, 1fr)"
+						gap={{base:2,md:4}}
+					>
+
+					<GridItem rowSpan={6} colSpan={8}>
+						<Image
+						src ={Drib1}
+						loading="lazy"
+						alt="picture"
+						boxSize="full"
+						objectFit="cover"
+						borderRadius="md"
+						width="full"
+						height="full"
+						/>
+					</GridItem>
+
+					<GridItem rowSpan={3} colSpan={4}>
+						<Image
+						src ={Drib2}
 						alt=""
 						loading="lazy"
 						boxSize="full"
@@ -244,11 +311,11 @@ function Portfolio(props) {
 						/>
 					</GridItem>
 
-					<GridItem rowSpan={6} colSpan={6}>
+					<GridItem rowSpan={3} colSpan={4}>
 						<Image
-						src ={Marmud4}
-						alt=""
 						loading="lazy"
+						src ={Drib3}
+						alt=""
 						boxSize="full"
 						objectFit="cover"
 						borderRadius="md"
@@ -258,6 +325,51 @@ function Portfolio(props) {
 					</GridItem>
 				</Grid>
 				</Fade>
+
+				<Fade duration={500} distance="30px" delay={340} fraction={0.4} bottom>
+					<Grid
+					marginTop={{base:2,md:4}}
+					templateRows="repeat(6, 1fr)"
+					templateColumns="repeat(12, 1fr)"
+					w="full"
+					gap={{base:2,md:4}}
+						>
+
+					<GridItem rowSpan={6} colSpan={6}>
+						<Image
+						src ={Drib4}
+						borderRadius="md"
+						objectFit="cover"
+						boxSize="full"
+						/>
+					</GridItem>
+
+					<GridItem rowSpan={6} colSpan={6}>
+						<Image
+						src ={Drib5}
+						borderRadius="md"
+						objectFit="cover"
+						boxSize="full"
+						/>
+					</GridItem>
+				</Grid>
+				</Fade>
+
+				<br/>
+
+				<Grid templateColumns="repeat(1, 1fr)" gap={6}>
+					<Link href="https://dribbble.com/taufikemal_" isExternal>
+						<Button 
+							rightIcon={<ArrowForwardIcon />} 
+							colorScheme="teal" 
+							variant="solid"
+							justify="center"
+						>
+							See more
+						</Button>
+					</Link>
+				</Grid>
+
 				</Container>
 			</Layout>
 		</>

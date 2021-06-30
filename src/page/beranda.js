@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Layout from "../common/component/layout/layout";
-import { EmailIcon } from '@chakra-ui/icons'
+import { EmailIcon, DownloadIcon } from '@chakra-ui/icons'
 import Pict1 from "../assets/images/pict 1.svg";
 import Pict2 from "../assets/images/pict 2.svg";
 import Pict3 from "../assets/images/pict 3.svg";
@@ -73,14 +73,19 @@ function Beranda(props) {
 							<br/>
 							<Fade duration={500} distance="30px" delay={300} fraction={0.4} left>
 								<Stack direction="row" spacing={4} align="center">
+
 									<Button leftIcon={<EmailIcon />} colorScheme="teal" variant="solid">
 										<Link href="mailto: artcrev7@gmail.com" isExternal>
 											Email me!
 										</Link>
 									</Button>
-									<Button colorScheme="teal" variant="ghost">
-										Button
+
+									<Button leftIcon={<DownloadIcon />} colorScheme="teal" variant="ghost">
+										<Link href="https://drive.google.com/file/d/1sHwu9XFt7JgLYxOf_LUubp5OlHdBHz4I/view?usp=sharing" isExternal>
+											My Curriculum Vitae
+										</Link>
 									</Button>
+
 								</Stack>
 							</Fade>
 						</GridItem>
@@ -170,7 +175,7 @@ function Beranda(props) {
 						width="full"
 						height="full"
 						alignContent="center"
-						mt={48} 
+						mt={32} 
 						rowSpan={2}
 					>
 						<Box mt={{ base: "44", md: "28", lg: "0" }}>

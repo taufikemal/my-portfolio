@@ -205,7 +205,9 @@ function Header(props) {
 										fontSize="xs" 
 										paddingX="1" 
 										fontWeight="bold"
-									> <Link to="/">Beranda</Link> </Text>
+									> 
+										<Link to="/">Home</Link> 
+									</Text>
 								</Box>
 
 								<Divider />
@@ -223,7 +225,28 @@ function Header(props) {
 										paddingX="1" 
 										fontWeight="bold"
 									>
-										<Link to="/portfolio">Portfolio</Link>
+										<Link to="/portfolio">
+											Portfolio
+										</Link>
+									</Text>
+								</Box>
+
+								<Box 
+									as="button" 
+									textAlign="left" 
+									w="full" 
+									display="flex" 
+									h="min-content" 
+									paddingY="1"
+								>
+									<Text 
+										fontSize="xs" 
+										paddingX="1" 
+										fontWeight="bold"
+									>
+										<Link to="/about">
+											About Me
+										</Link>
 									</Text>
 								</Box>
 

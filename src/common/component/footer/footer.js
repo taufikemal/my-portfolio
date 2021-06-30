@@ -8,14 +8,15 @@ export default function Footer(props) {
 			<br/>
 
 			<Grid templateColumns="repeat(2, 1fr)" gap={12}>
-				<Box pt="4" pb="4" bottom="0" position="relative" as="footer" textAlign="center">
+				<Box pt="4" pb="4" bottom="0" position="relative" as="footer">
 					<Text 
 						letterSpacing={"-.0.001rem"} 
 						lineHeight={"-.0.001rem"} 
 						fontSize={{ base :"md", md:"md"}} 
 						fontWeight="medium"
+						textAlign="center"
 					>
-						Taufik Kemal Thaha <Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal>@UI/UX</Link>
+						Follow my IG <Link href="https://www.instagram.com/taufikemal_" color="teal.500" isExternal>@taufikemal_</Link>
 					</Text>
 				</Box>
 
@@ -26,7 +27,7 @@ export default function Footer(props) {
 						fontSize={{ base :"md", md:"md"}} 
 						fontWeight="medium"
 					>
-						Taufik Kemal Thaha <Link href="https://www.instagram.com/p/CO1MxEao-RV/" color="teal.500" isExternal>@UI/UX</Link>
+						Taufik Kemal Thaha © 2021
 					</Text>
 				</Box>
 			</Grid>

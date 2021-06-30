@@ -3,10 +3,12 @@ import Fade from 'react-reveal/Fade';
 import Layout from "../common/component/layout/layout";
 import { Box, Button, Text, Stack, Container, Grid, GridItem, Image, Link, Heading } from '@chakra-ui/react';
 import { EmailIcon } from '@chakra-ui/icons'
-import Pict1 from "../assets/images/pict 1.svg";
 import Pict2 from "../assets/images/pict 2.svg";
 import Pict3 from "../assets/images/pict 3.svg";
 import Pict4 from "../assets/images/pict 4.svg";
+import Pict6 from "../assets/images/pict 6.svg";
+import Pict7 from "../assets/images/pict 6.svg";
+import Pict8 from "../assets/images/pict 8.png";
 
 
 export default function Beranda(props) {
@@ -23,7 +25,7 @@ export default function Beranda(props) {
 				<Grid
 					templateColumns="repeat(2, 2fr)"
 					templateRows="repeat(2, 2fr)" 
-					gap={8}>
+					gap={0}>
 					
 					<GridItem 
 						width="full"
@@ -86,10 +88,11 @@ export default function Beranda(props) {
 					<Box mt={{ base: "44", md: "28", lg: "0" }}>
 						<Fade duration={500} distance="30px" fraction={0.4} right>
 							<Image 
-								ml="4"
-								width="full"
-								height="full"
-								src={Pict1}
+								mx="12"
+								my="2"
+								width="600"
+								height="600"
+								src={Pict8}
 							/>
 						</Fade>
 					</Box>
