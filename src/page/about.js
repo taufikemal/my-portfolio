@@ -114,7 +114,7 @@ export default function Beranda(props) {
 				<br/>
 
 				<Grid templateColumns="repeat(3, 2fr)" gap={6}>
-				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
+				<Fade duration={600} delay={300} distance="30px" fraction={0.4} bottom>
 						<Center 
 							p={2}
 							w="100%" 
@@ -130,7 +130,7 @@ export default function Beranda(props) {
 						</Center>
 				</Fade>
 
-				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
+				<Fade duration={600} delay={300} distance="30px" fraction={0.4} bottom>
 						<Center 
 							p={2}
 							
@@ -147,7 +147,7 @@ export default function Beranda(props) {
 						</Center>
 				</Fade>
 
-				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
+				<Fade duration={600} delay={300} distance="30px" fraction={0.4} bottom>
 						<Center 
 							p={2}
 							w="100%" 
@@ -163,7 +163,7 @@ export default function Beranda(props) {
 						</Center>
 				</Fade>
 
-				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
+				<Fade duration={600} delay={300} distance="30px" fraction={0.4} top>
 						<Center 
 							p={2}
 							w="100%" 
@@ -179,7 +179,7 @@ export default function Beranda(props) {
 						</Center>
 				</Fade>
 
-				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
+				<Fade duration={600} delay={300} distance="30px" fraction={0.4} top>
 						<Center 
 							p={2}
 							w="100%" 
@@ -195,7 +195,7 @@ export default function Beranda(props) {
 						</Center>
 				</Fade>
 
-				<Fade duration={600} delay={300} distance="30px" fraction={0.4} left>
+				<Fade duration={600} delay={300} distance="30px" fraction={0.4} top>
 						<Center 
 							p={2}
 							w="100%" 

@@ -105,17 +105,21 @@ function Beranda(props) {
 					</GridItem>
 				</Grid>
 
-				<Heading 
-					as="h1"
-					bgGradient="linear(to-r, teal.500,green.500)"
-					bgClip="text"
-					fontSize="4xl"
-					fontWeight="extrabold"
-					justify="center"
-					textAlign="center"
-				>
-					My Organizations
-				</Heading>
+				<br/>
+
+				<Fade duration={700} distance="30px" fraction={0.4} bottom>
+					<Heading 
+						as="h1"
+						bgGradient="linear(to-r, teal.500,green.500)"
+						bgClip="text"
+						fontSize="4xl"
+						fontWeight="extrabold"
+						justify="center"
+						textAlign="center"
+					>
+						My Organizations
+					</Heading>
+				</Fade>
 
 				<br/><br/>
 
@@ -123,32 +127,40 @@ function Beranda(props) {
 					spacing="24"
 					justify="center"
 				>
-					<Fade duration={700} distance="30px" fraction={0.4} bottom>
-					<Image
-						width="60"
-						src={Org1}
-					/>
+					<Fade duration={700} delay={400} distance="30px" fraction={0.4} bottom>
+					<Link href="https://www.instagram.com/anakteknikindo/" isExternal>
+						<Image
+							width="60"
+							src={Org1}
+						/>
+					</Link>
 					</Fade>
 
-					<Fade duration={800} distance="30px" fraction={0.4} bottom>
-					<Image 
-						width="60"
-						src={Org2}
-					/>
+					<Fade duration={800} delay={500} distance="30px" fraction={0.4} bottom>
+					<Link href="https://www.instagram.com/anakteknikindo/" isExternal>
+						<Image 
+							width="60"
+							src={Org2}
+						/>
+					</Link>
 					</Fade>
 
-					<Fade duration={900} distance="30px" fraction={0.4} bottom>
-					<Image 	
-						width="60"
-						src={Org3}
-					/>
+					<Fade duration={900} delay={600} distance="30px" fraction={0.4} bottom>
+					<Link href="https://www.instagram.com/dsc.ugm/" isExternal>
+						<Image 	
+							width="60"
+							src={Org3}
+						/>
+					</Link>
 					</Fade>
 
-					<Fade duration={1000} distance="30px" fraction={0.4} bottom>
-					<Image 	
-						width="60"
-						src={Org4}
-					/>
+					<Fade duration={1000} delay={700} distance="30px" fraction={0.4} bottom>
+					<Link href="https://www.instagram.com/mardliyyah.muda/" isExternal>
+						<Image 	
+							width="60"
+							src={Org4}
+						/>
+					</Link>
 					</Fade>
 				</HStack>
 
@@ -256,7 +268,7 @@ function Beranda(props) {
 						</Box>
 				</Fade>
 
-					<Fade duration={600} delay={300} distance="30px" fraction={0.4} bottom>
+					<Fade duration={600} delay={400} distance="30px" fraction={0.4} bottom>
 						<Box 
 							p={8}
 							w="100%" 
@@ -279,7 +291,7 @@ function Beranda(props) {
 						</Box>
 					</Fade>
 
-					<Fade duration={600} delay={300} distance="30px" fraction={0.4} bottom>
+					<Fade duration={600} delay={500} distance="30px" fraction={0.4} bottom>
 						<Box
 							rounded="md"
 							p={8}
