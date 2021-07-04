@@ -52,7 +52,7 @@ export default function Beranda(props) {
 							</Fade>
 							</Box>
 
-							<Fade duration={500} distance="30px" delay={100} fraction={0.4} left>
+							<Fade duration={500} distance="30px" delay={500} fraction={0.4} left>
 								<Text 
 									letterSpacing={"-.0.01rem"} 
 									lineHeight={"-.0.001rem"} 
@@ -64,7 +64,7 @@ export default function Beranda(props) {
 							</Fade>
 							
 							<br/>
-							<Fade duration={500} distance="30px" delay={300} fraction={0.4} left>
+							<Fade duration={500} distance="30px" delay={600} fraction={0.4} left>
 								<Stack direction="row" spacing={4} align="center">
 
 									<Button leftIcon={<EmailIcon />} colorScheme="teal" variant="solid">
@@ -86,7 +86,7 @@ export default function Beranda(props) {
 
 					<GridItem rowSpan={2} colSpan={1}>
 					<Box mt={{ base: "44", md: "28", lg: "0" }}>
-						<Fade duration={500} distance="30px" fraction={0.4} right>
+						<Fade duration={500} distance="30px" delay={600} fraction={0.4} right>
 							<Image 
 								mx="12"
 								my="1"
