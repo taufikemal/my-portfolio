@@ -128,7 +128,7 @@ function Portfolio(props) {
 					</Text>
 				</Fade>
 
-				<Fade duration={500} distance="30px" delay={340} fraction={0.4} bottom>
+				<Fade duration={500} distance="30px" delay={400} fraction={0.4} bottom>
 					<Grid
 					marginTop={{base:2,md:4}}
 					w="100%"
@@ -137,41 +137,49 @@ function Portfolio(props) {
 					gap={{base:2,md:4}}
 					>
 
-					<GridItem colSpan={1}>
-						<Image
-						src ={Dsc1}
-						borderRadius="md"
-						objectFit="cover"
-						boxSize="full"
-						/>
-					</GridItem>
+					<Fade duration={500} distance="30px" delay={500} fraction={0.4} bottom>
+						<GridItem colSpan={1}>
+							<Image
+							src ={Dsc1}
+							borderRadius="md"
+							objectFit="cover"
+							boxSize="full"
+							/>
+						</GridItem>
+					</Fade>
 
-					<GridItem colSpan={1}>
-						<Image
-						src ={Dsc2}
-						borderRadius="md"
-						objectFit="cover"
-						boxSize="full"
-						/>
-					</GridItem>
+					<Fade duration={500} distance="30px" delay={600} fraction={0.4} bottom>
+						<GridItem colSpan={1}>
+							<Image
+							src ={Dsc2}
+							borderRadius="md"
+							objectFit="cover"
+							boxSize="full"
+							/>
+						</GridItem>
+					</Fade>
 
-					<GridItem colSpan={1}>
-						<Image
-						src ={Dsc3}
-						borderRadius="md"
-						objectFit="cover"
-						boxSize="full"
-						/>
-					</GridItem>
+					<Fade duration={500} distance="30px" delay={700} fraction={0.4} bottom>
+						<GridItem colSpan={1}>
+							<Image
+							src ={Dsc3}
+							borderRadius="md"
+							objectFit="cover"
+							boxSize="full"
+							/>
+						</GridItem>
+					</Fade>
 
-					<GridItem colSpan={1}>
-						<Image
-						src ={Dsc4}
-						borderRadius="md"
-						objectFit="cover"
-						boxSize="full"
-						/>
-					</GridItem>
+					<Fade duration={500} distance="30px" delay={800} fraction={0.4} bottom>
+						<GridItem colSpan={1}>
+							<Image
+							src ={Dsc4}
+							borderRadius="md"
+							objectFit="cover"
+							boxSize="full"
+							/>
+						</GridItem>
+					</Fade>
 				</Grid>
 				</Fade>
 				
