@@ -5,7 +5,6 @@ export default function Footer(props) {
 	return ( 
 		<>
 			<br/>
-			<br/>
 
 			<Grid templateColumns="repeat(2, 1fr)" gap={12}>
 				<Box pt="4" pb="4" bottom="0" position="relative" as="footer">
@@ -32,7 +31,6 @@ export default function Footer(props) {
 				</Box>
 			</Grid>
 
-			<br/>
 			<br/>
 		</>
 	);
