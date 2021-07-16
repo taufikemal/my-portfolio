@@ -142,8 +142,7 @@ function Header(props) {
 								<FaGithub mx="2px" />
 						</Button>
 					</LinkChakra>
-
-
+					
 
 					<IconButton
 						mx={2}

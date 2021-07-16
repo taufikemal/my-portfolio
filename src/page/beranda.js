@@ -45,7 +45,7 @@ function Beranda(props) {
 									fontSize="4xl"
 									fontWeight="extrabold"
 								>
-									Hello, Welcome to my
+									Hello, Welcome to My
 								</Heading>
 								<Heading 
 									as="h1"
@@ -66,7 +66,7 @@ function Beranda(props) {
 									textAlign="justify" 
 									fontSize={{ base: "lg", md: "md", lg: "xl" }}
 								>
-									I am Taufik Kemal Thaha, you can call me "Kemal" and i'am a Graphic Designer, Content creator and UI/UX Learner. Nice to meet you
+									I am Taufik Kemal Thaha, you can call me Kemal. I'm a Graphic Designer, Content creator, and UI/UX Learner. Nice to meet you!
 								</Text>
 							</Fade>
 							
@@ -76,7 +76,7 @@ function Beranda(props) {
 
 									<Button leftIcon={<EmailIcon />} colorScheme="teal" variant="solid">
 										<Link href="mailto: artcrev7@gmail.com" isExternal>
-											Email me!
+											Email Me!
 										</Link>
 									</Button>
 
@@ -117,7 +117,7 @@ function Beranda(props) {
 						justify="center"
 						textAlign="center"
 					>
-						My Organizations
+						My Experiences
 					</Heading>
 				</Fade>
 
@@ -220,7 +220,7 @@ function Beranda(props) {
 									textAlign="justify" 
 									fontSize={{ base: "lg", md: "md", lg: "xl" }}
 								>
-									Exploration and learning new things with anyone, anytime, and anywhere.
+									with anyone, anytime, and anywhere.
 								</Text>
 							</Fade>
 							
@@ -240,7 +240,7 @@ function Beranda(props) {
 					justify="center"
 					textAlign="center"
 				>
-					What i learn
+					What I learn
 				</Heading>
 				<br/><br/>
 
@@ -263,7 +263,7 @@ function Beranda(props) {
 								lineHeight={"-.0.001rem"} 
 								textAlign="center"
 							>
-								Learning about basic Front End Developing
+								Basic Front End Developing
 							</Text>
 						</Box>
 				</Fade>
@@ -286,7 +286,7 @@ function Beranda(props) {
 								lineHeight={"-.0.001rem"} 
 								textAlign="center"
 							>
-								Learning about Content Making
+								Creating Content
 							</Text>
 						</Box>
 					</Fade>
@@ -310,7 +310,7 @@ function Beranda(props) {
 								lineHeight={"-.0.001rem"} 
 								textAlign="center"							
 							>
-								Learning about User Interface and User Experience Design
+								User Interface and User Experience Design
 							</Text>
 						</Box>
 					</Fade>
